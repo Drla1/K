@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;  /* Color de fondo por defecto si no se encuentra una imagen */
+    color: white;
+}
+
+/* Estilos para la página principal */
+.pagina-principal {
+    background-image: url('principal.png'); /* Asegúrate de que la imagen 'principal.jpg' esté en la misma carpeta que el HTML */
+    background-size: contain; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    align-items: center;
+    text-align: center;
+}
+
+.pagina-principal h1 {
+    font-size: 3em;
+}
+
+/* Estilos para el botón 'Siguiente' */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;  /* Mueve todo el contenido hacia abajo */
+}
+
+
+.btn-siguiente:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Efecto hover en el botón */
+}
+
+/* Estilos para las páginas siguientes */
+.pagina-2{
+    background-image: url('segunda.png'); /* Asegúrate de tener las imágenes correctas en la misma carpeta */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor para el enlace 'Siguiente' */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;  /* Mueve todo el contenido hacia abajo */
+}
+.pagina-3 {
+    background-image: url('tercera.jpg'); /* Asegúrate de tener las imágenes correctas en la misma carpeta */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor para el enlace 'Siguiente' */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 100px;  /* Mueve todo el contenido hacia abajo */
+}
+.pagina-4 {
+    background-image: url('cuarta.png'); /* Asegúrate de tener las imágenes correctas en la misma carpeta */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    align-items: center;
+    text-align: center;
+}
+/* Contenedor para el enlace 'Siguiente' */
+.container {
+    display: flex;
+    justify-content: center;   /* Centra el contenido horizontalmente */
+    align-items: flex-end;      /* Alinea el contenido al final del contenedor (abajo) */
+    height: 100vh;              /* Usa toda la altura de la pantalla */
+    padding-bottom: 50px;       /* Opcional: agrega un pequeño margen en la parte inferior */
+}
+/* Estilos para la página 'Pregunta' */
+.pagina-pregunta {
+    background-image: url('pregunta.png'); /* Imágenes de fondo de la página 'pregunta' */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para la página de Recuerdos */
+.pagina-recuerdos {
+    background-image: url('amor.jpg'); /* Fondo para la página de Recuerdos */
+    background-size: cover;  /* Fondo cubre toda la pantalla */
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    align-items: flex-start;  /* Cambié esto para empezar desde la parte superior */
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;  /* Añadí un pequeño margen en la parte superior */
+}
+
+/* Título de la página */
+.pagina-recuerdos h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes en la página de Recuerdos */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Reduce el tamaño mínimo de las imágenes */
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra las imágenes */
+}
+
+.imagenes img {
+    width: 100%; /* Las imágenes se ajustan al ancho de su contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-width: 200px; /* Ajusta el tamaño máximo de las imágenes */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05); /* Efecto de zoom más sutil */
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
